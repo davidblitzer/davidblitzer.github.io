@@ -97,8 +97,8 @@ p {
 
         > li {
             > a {
-                padding-top: 25px !important;
-                padding-bottom: 25px !important;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
             }
             > a,
             > a:focus {
@@ -135,11 +135,16 @@ p {
             }
         }
 
+        .nav >li > a{
+            padding-top: 25px !important;
+            padding-bottom: 25px !important;
+        }
+
         .nav > li > a,
         .nav > li > a:focus {
             color: white;
             &:hover {
-                color: white;
+                color: @navy;
             }
         }
 
@@ -147,16 +152,25 @@ p {
             background-color: white;
             border-color: fade(@gray-darker, 5%);
             .navbar-header .navbar-brand {
+                padding-top: 15px !important;
                 color: @navy;
-                font-size: 14px;
+                font-size: 18px;
                 &:hover,
                 &:focus {
                     color: darken(@navy, 10%);
                 }
             }
+
+            .nav >li > a{
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+            }
+
             .nav > li > a,
             .nav > li > a:focus {
-                color: @gray-darker;
+                padding-top: 15px !important;
+                font-size: 14px;
+                color: @gray;
                 &:hover {
                     color: @navy;
                 }
