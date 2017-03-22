@@ -479,6 +479,38 @@ header:after {
   text-align: justify;
   font-weight: 100;
 }
+.filler2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/iStock-482737246.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.filler2 p {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 33px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+.filler2 p span {
+  color: #c3962e;
+  font-weight: 900;
+}
+.filler2:after {
+  background: url('../img/grid.png') center repeat;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
 .btn-default {
   color: #222222;
   background-color: white;
