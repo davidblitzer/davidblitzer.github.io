@@ -16,9 +16,6 @@ hr {
   border-width: 3px;
   max-width: 80px;
 }
-hr.full {
-  max-width: 100%;
-}
 .hr-invisible {
   height: 2px;
   visibility: hidden;
@@ -84,7 +81,7 @@ p {
 }
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-  color: #04060a;
+  color: #436597;
 }
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: bolder;
@@ -108,11 +105,11 @@ p {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
-  color: #141e2d;
+  color: #436597;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #141e2d !important;
+  color: #436597 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -143,7 +140,7 @@ p {
   }
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
-    color: #141e2d;
+    color: #436597;
   }
   .navbar-default.affix {
     background-color: white;
@@ -156,7 +153,7 @@ p {
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #04060a;
+    color: #436597;
   }
   .navbar-default.affix .nav > li > a {
     padding-top: 5px !important;
@@ -170,7 +167,7 @@ p {
   }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #141e2d;
+    color: #436597;
   }
 }
 header {
@@ -430,7 +427,7 @@ header:after {
   z-index: 2;
 }
 .conditions {
-  height: 600px;
+  min-height: 600px;
   background-color: #141e2d;
   padding: 100px;
 }
@@ -449,6 +446,38 @@ header:after {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+}
+.what-we-do {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+.what-we-do .row {
+  padding-top: 70px;
+}
+.what-we-do .row h2 {
+  font-weight: 200;
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.what-we-do .row h2 span {
+  font-weight: 900;
+  font-size: 28px;
+}
+.what-we-do .row img {
+  height: 100%;
+}
+.what-we-do .row hr {
+  border-color: #c3962e;
+  border-width: 3px;
+  max-width: 100%;
+}
+.what-we-do .row p {
+  padding-top: 15px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+  font-weight: 100;
 }
 .btn-default {
   color: #222222;
