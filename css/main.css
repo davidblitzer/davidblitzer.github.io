@@ -14,7 +14,7 @@ body {
 hr {
   border-color: #c3962e;
   border-width: 3px;
-  max-width: 50px;
+  max-width: 80px;
 }
 hr.full {
   max-width: 100%;
@@ -381,6 +381,7 @@ header:after {
   align-items: center;
 }
 .filler1 p {
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 33px;
   font-family: 'Raleway', sans-serif;
@@ -390,9 +391,64 @@ header:after {
   color: #c3962e;
   font-weight: 900;
 }
-.no-gutter > [class*='col-'] {
-  padding-right: 0;
-  padding-left: 0;
+.section-services {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.section-services h2 {
+  font-weight: 900;
+  font-size: 33px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.section-services .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+  border-color: #c3962e;
+  border-style: solid;
+  border-width: 1px;
+}
+.section-services .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+.section-services .portfolio-item .portfolio-caption h4 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: none;
+  margin: 0;
+  font-weight: 900;
+}
+@media (min-width: 767px) {
+  .section-services .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+.section-services * {
+  z-index: 2;
+}
+.conditions {
+  height: 600px;
+  background-color: #141e2d;
+  padding: 100px;
+}
+.conditions .content {
+  padding-top: 50px;
+}
+.conditions .content p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 35px;
+  font-family: 'Raleway', sans-serif;
+}
+.conditions h2 {
+  font-weight: 900;
+  font-size: 33px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .btn-default {
   color: #222222;
