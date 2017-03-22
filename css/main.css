@@ -667,6 +667,47 @@ fieldset[disabled] .contact .btn-submit.active {
 .contact .text-danger {
   color: red;
 }
+.hours {
+  min-height: 520px;
+  background-color: #eeeeee;
+}
+.hours #map {
+  border: 1px #c3962e solid;
+  height: 400px;
+  margin-top: 60px;
+}
+.hours .opperating-hrs {
+  padding-top: 60px;
+  padding-left: 60px;
+}
+.hours .opperating-hrs h3 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.hours .opperating-hrs ul {
+  margin-top: 40px;
+}
+.hours .opperating-hrs li {
+  line-height: 41px;
+  font-size: 16px;
+}
+.hours .opperating-hrs .highlight {
+  color: #c3962e;
+  font-weight: 600;
+}
+.affiliates {
+  min-height: 200px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.affiliates img {
+  height: 130px;
+  padding: 25px;
+}
 .btn-default {
   color: #222222;
   background-color: white;

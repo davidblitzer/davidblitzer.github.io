@@ -390,6 +390,77 @@
     </div>
 </section>
 
+<section class="hours">
+    <div class="container">
+        <div class="col-md-7">
+            <div id="map"></div>
+        </div>
+        <div class="col-md-5 opperating-hrs">
+            <h3 class="text-center">Operating Hours</h3>
+            <hr>
+            <ul class="list-unstyled opening-hours">
+                <li>
+                    <span class="highlight">Monday </span>
+                    <span class="pull-right">8:00 AM  - 8:00 PM</span>
+                </li>
+                <li>
+                    <span class="highlight">Tuesday</span>
+                    <span class="pull-right">8:00 AM  - 8:00 PM</span>
+                </li>
+                <li>
+                    <span class="highlight">Wednesday</span>
+                    <span class="pull-right">8:00 AM  - 8:00 PM</span>
+                </li>
+                <li>
+                    <span class="highlight">Thursday </span>
+                    <span class="pull-right">8:00 AM  - 8:00 PM</span>
+                </li>
+                <li>
+                    <span class="highlight">Friday </span>
+                    <span class="pull-right">8:00 AM  - 8:00 PM</span>
+                </li>
+                <li>
+                    <span class="highlight">Saturday </span>
+                    <span class="pull-right">8:00 AM - 12:00 PM</span>
+                </li>
+                <li><span class="highlight">Sunday </span>
+                    <span class="pull-right">Closed</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="affiliates">
+    <div class="container-fluid">
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/College-of-Chiropractors-of-Ontario.jpg">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/CCA-Logo%20copy.png">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/CCA-Logo%20copy.png">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/CCPALogo-01.png">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/Asset%207.png">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/s816-k-no%20copy.jpg">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/Unknown.jpeg">
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6">
+            <img src="img/affiliates/tpi-certified-swingman.png">
+        </div>
+    </div>
+</section>
+
+
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -402,6 +473,25 @@
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <script src="js/main.min.js"></script>
+<script>
+    function initMap() {
+        var uluru = {lat: 43.8237564, lng: -79.4266715};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru,
+            scrollwheel: false,
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1GSPQZGmiD5pLgxsJSKE8BNQssGKosJA&callback=initMap">
+</script>
+
 
 </body>
 </html>
