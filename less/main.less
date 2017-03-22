@@ -83,7 +83,7 @@ p {
     .navbar-header .navbar-brand {
         color: @navy;
         .sans-serif;
-        font-weight: bolder;
+        font-weight: 600;
         font-size: 30px;
         text-transform: uppercase;
         &:hover,
@@ -92,7 +92,7 @@ p {
         }
     }
     .navbar-header .navbar-toggle {
-        font-weight: bolder;
+        font-weight: 600;
         font-size: 12px;
         color: @gray-darker;
         text-transform: uppercase;
@@ -108,8 +108,8 @@ p {
             > a,
             > a:focus {
                 text-transform: uppercase;
-                font-weight: bolder;
-                font-size: 19px;
+                font-weight: 600;
+                font-size: 17px;
                 color: @gray-darker;
                 &:hover {
                     color: lighten(@navy, 30%);
@@ -326,7 +326,7 @@ header {
             float:left;
             width: 20%;
             h4{
-                font-size: 1.5vw;
+                font-size: 1.3vw;
                 text-transform: uppercase;
 
                 span{
@@ -372,13 +372,13 @@ header:after {
         color: @navy;
         text-transform: uppercase;
         font-weight: 100!important;
-        padding-bottom: 30px;
-        font-size: 25px;
+        padding-bottom: 25px;
+        font-size: 24px;
 
         .sans-serif;
         span {
-            font-weight: 900!important;
-            font-size: 27px;
+            font-weight: 900;
+            font-size: 26px;
         }
     }
     hr{
@@ -402,7 +402,7 @@ header:after {
         color: @white;
         font-size: 33px;
         .raleway-font;
-        font-weight: 900;
+        font-weight: 400;
         span{
             color: @gold;
             font-weight: 900;
@@ -414,8 +414,8 @@ header:after {
     margin-top: 70px;
     margin-bottom: 70px;
     h2{
-        font-weight: 900;
-        font-size: 33px;
+        font-weight: 600;
+        font-size: 28px;
         .raleway-font;
         text-transform: uppercase;
     }
@@ -436,7 +436,7 @@ header:after {
                 .raleway-font;
                 text-transform: none;
                 margin: 0;
-                font-weight: 900;
+                font-weight: 500;
             }
         }
         @media(min-width:767px) {
@@ -466,8 +466,8 @@ header:after {
     }
 
     h2{
-        font-weight: 900;
-        font-size: 33px;
+        font-weight: 600;
+        font-size: 28px;
         .raleway-font;
         text-transform: uppercase;
         color: @white;
@@ -528,7 +528,8 @@ header:after {
         color: @white;
         font-size: 33px;
         .raleway-font;
-        font-weight: 900;
+        font-weight: 400;
+        line-height: 40px;
         span{
             color: @gold;
             font-weight: 900;
@@ -552,10 +553,77 @@ header:after {
     .heading{
         margin-bottom: 50px;
         h2{
-            font-weight: 900;
-            font-size: 33px;
+            font-weight: 600;
+            font-size: 28px;
             .raleway-font;
             text-transform: uppercase;
+        }
+    }
+
+    .find-us{
+        border-left: 1px @gold solid;
+        height: 100%;
+        padding-left: 30px;
+        margin-bottom: 25px;
+        line-height: 3px;
+
+        h3{
+            margin-top: 0;
+            font-weight: 900;
+            font-size: 22px;
+            .raleway-font;
+            text-transform: uppercase;
+        }
+
+        h4{
+            font-weight: 900;
+            font-size: 16px;
+            .sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        h5{
+            font-weight: 400;
+            font-size: 15px;
+            .sans-serif;
+        }
+
+        p{
+            margin-left: 27px;
+            span{
+                font-style: italic;
+                font-weight: 100;
+            }
+        }
+
+        .ic{
+            width: 15px;
+            float: left;
+            margin-right: 10px;
+        }
+        .social{
+            width: 40px;
+            float: left;
+            margin-left: 27px;
+        }
+    }
+
+    .form-group {
+        padding-right: 30px;
+        .sans-serif;
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 15px;
+            border: 1px @navy solid;
+            border-radius: 0px;
+        }
+        input.form-control {
+            height: auto;
+        }
+        textarea.form-control {
+            height: 275px;
+            resize: none;
         }
     }
 
@@ -571,7 +639,7 @@ header:after {
         font-weight: 100;
         font-size: 17px;
         text-transform: uppercase;
-        padding: 17px 35px;
+        padding: 15px 35px;
 
         -webkit-box-decoration-break: clone;
         -o-box-decoration-break: clone;
@@ -612,24 +680,6 @@ header:after {
         }
     }
 
-    .form-group {
-        padding-right: 50px;
-        .sans-serif;
-        margin-bottom: 25px;
-        input,
-        textarea {
-            padding: 15px;
-            border: 1px @navy solid;
-            border-radius: 0px;
-        }
-        input.form-control {
-            height: auto;
-        }
-        textarea.form-control {
-            height: 236px;
-            resize: none;
-        }
-    }
     .form-control:focus {
         border-color: lighten(@navy, 50%);
         box-shadow: none;

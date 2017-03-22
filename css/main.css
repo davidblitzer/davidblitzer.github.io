@@ -75,7 +75,7 @@ p {
 .navbar-default .navbar-header .navbar-brand {
   color: #141e2d;
   font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@ p {
   color: #436597;
 }
 .navbar-default .navbar-header .navbar-toggle {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 12px;
   color: #222222;
   text-transform: uppercase;
@@ -99,8 +99,8 @@ p {
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
-  font-weight: bolder;
-  font-size: 19px;
+  font-weight: 600;
+  font-size: 17px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
@@ -317,7 +317,7 @@ header .services .element {
   width: 20%;
 }
 header .services .element h4 {
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   text-transform: uppercase;
 }
 header .services .element h4 span {
@@ -355,13 +355,13 @@ header:after {
   color: #141e2d;
   text-transform: uppercase;
   font-weight: 100!important;
-  padding-bottom: 30px;
-  font-size: 25px;
+  padding-bottom: 25px;
+  font-size: 24px;
   font-family: 'Open Sans', sans-serif;
 }
 .section-about-me h3 span {
-  font-weight: 900!important;
-  font-size: 27px;
+  font-weight: 900;
+  font-size: 26px;
 }
 .section-about-me hr {
   position: relative;
@@ -382,7 +382,7 @@ header:after {
   color: #ffffff;
   font-size: 33px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
 }
 .filler1 p span {
   color: #c3962e;
@@ -393,8 +393,8 @@ header:after {
   margin-bottom: 70px;
 }
 .section-services h2 {
-  font-weight: 900;
-  font-size: 33px;
+  font-weight: 600;
+  font-size: 28px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
@@ -416,7 +416,7 @@ header:after {
   font-family: 'Raleway', sans-serif;
   text-transform: none;
   margin: 0;
-  font-weight: 900;
+  font-weight: 500;
 }
 @media (min-width: 767px) {
   .section-services .portfolio-item {
@@ -441,8 +441,8 @@ header:after {
   font-family: 'Raleway', sans-serif;
 }
 .conditions h2 {
-  font-weight: 900;
-  font-size: 33px;
+  font-weight: 600;
+  font-size: 28px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -494,7 +494,8 @@ header:after {
   color: #ffffff;
   font-size: 33px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
+  line-height: 40px;
 }
 .filler2 p span {
   color: #c3962e;
@@ -518,10 +519,71 @@ header:after {
   margin-bottom: 50px;
 }
 .contact .heading h2 {
-  font-weight: 900;
-  font-size: 33px;
+  font-weight: 600;
+  font-size: 28px;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
+}
+.contact .find-us {
+  border-left: 1px #c3962e solid;
+  height: 100%;
+  padding-left: 30px;
+  margin-bottom: 25px;
+  line-height: 3px;
+}
+.contact .find-us h3 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.contact .find-us h4 {
+  font-weight: 900;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.contact .find-us h5 {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact .find-us p {
+  margin-left: 27px;
+}
+.contact .find-us p span {
+  font-style: italic;
+  font-weight: 100;
+}
+.contact .find-us .ic {
+  width: 15px;
+  float: left;
+  margin-right: 10px;
+}
+.contact .find-us .social {
+  width: 40px;
+  float: left;
+  margin-left: 27px;
+}
+.contact .form-group {
+  padding-right: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 25px;
+}
+.contact .form-group input,
+.contact .form-group textarea {
+  padding: 15px;
+  border: 1px #141e2d solid;
+  border-radius: 0px;
+}
+.contact .form-group input.form-control {
+  height: auto;
+}
+.contact .form-group textarea.form-control {
+  height: 275px;
+  resize: none;
 }
 .contact .btn-submit {
   background: Transparent;
@@ -534,7 +596,7 @@ header:after {
   font-weight: 100;
   font-size: 17px;
   text-transform: uppercase;
-  padding: 17px 35px;
+  padding: 15px 35px;
   -webkit-box-decoration-break: clone;
   -o-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -579,24 +641,6 @@ fieldset[disabled] .contact .btn-submit.active {
 .contact .btn-submit .badge {
   color: #ffffff;
   background-color: #141e2d;
-}
-.contact .form-group {
-  padding-right: 50px;
-  font-family: 'Open Sans', sans-serif;
-  margin-bottom: 25px;
-}
-.contact .form-group input,
-.contact .form-group textarea {
-  padding: 15px;
-  border: 1px #141e2d solid;
-  border-radius: 0px;
-}
-.contact .form-group input.form-control {
-  height: auto;
-}
-.contact .form-group textarea.form-control {
-  height: 236px;
-  resize: none;
 }
 .contact .form-control:focus {
   border-color: #7b99c5;
