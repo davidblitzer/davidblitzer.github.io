@@ -708,6 +708,47 @@ fieldset[disabled] .contact .btn-submit.active {
   height: 130px;
   padding: 25px;
 }
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/iStock-475440664.jpg') center no-repeat;
+  background-size: 100% 400px;
+  position: relative;
+  height: 400px;
+  padding: 40px;
+}
+.footer img {
+  height: 110px;
+  z-index: 9!important;
+}
+.footer h3 {
+  z-index: 10!important;
+  color: #c3962e;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.footer h5 {
+  z-index: 10!important;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.footer h4 {
+  color: #919191;
+}
+.footer:after {
+  background: url('../img/grid.png') center repeat;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
 .btn-default {
   color: #222222;
   background-color: white;

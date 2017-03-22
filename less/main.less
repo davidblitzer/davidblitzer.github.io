@@ -750,6 +750,51 @@ header:after {
     }
 }
 
+.footer{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/iStock-475440664.jpg') center no-repeat;
+    background-size: 100% 400px;
+    position: relative;
+    height: 400px;
+    padding: 40px;
+
+    img{
+        height: 110px;
+        z-index: 9!important;
+    }
+
+    h3{
+        z-index: 10!important;
+        color: @gold;
+        .raleway-font;
+        margin-left: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    h5{
+        z-index: 10!important;
+        color: white;
+        .sans-serif;
+        margin-left: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 20px;
+    }
+
+    h4{
+        color: @gray-light
+    }
+}
+.footer:after {
+    background: url('../img/grid.png') center repeat;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
 
 // Button Styles
 .btn-default {
