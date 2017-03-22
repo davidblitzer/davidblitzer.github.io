@@ -546,6 +546,114 @@ header:after {
     z-index: 2;
 }
 
+.contact{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .heading{
+        margin-bottom: 50px;
+        h2{
+            font-weight: 900;
+            font-size: 33px;
+            .raleway-font;
+            text-transform: uppercase;
+        }
+    }
+
+    .btn-submit{
+        background: Transparent;
+        border-color: @navy;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 17px !important;
+
+        .sans-serif;
+        color: @gray;
+        font-weight: 100;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 17px 35px;
+
+        -webkit-box-decoration-break: clone;
+        -o-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active,
+        .open > .dropdown-toggle& {
+            background: 0 0 rgba(0, 0, 0, 0.1);
+        }
+        &:active,
+        &.active,
+        .open > .dropdown-toggle& {
+            background-image: none;
+        }
+        &.disabled,
+        &[disabled],
+        fieldset[disabled] & {
+            &,
+            &:hover,
+            &:focus,
+            &.focus,
+            &:active,
+            &.active {
+                color: @navy;
+                background: 0 0 rgba(0, 0, 0, 0.5);
+                border-color: @navy;
+                border-style: solid;
+                border-width: 1px;
+            }
+        }
+
+        .badge {
+            color: @white;
+            background-color: @navy;
+        }
+    }
+
+    .form-group {
+        padding-right: 50px;
+        .sans-serif;
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 15px;
+            border: 1px @navy solid;
+            border-radius: 0px;
+        }
+        input.form-control {
+            height: auto;
+        }
+        textarea.form-control {
+            height: 236px;
+            resize: none;
+        }
+    }
+    .form-control:focus {
+        border-color: lighten(@navy, 50%);
+        box-shadow: none;
+    }
+    ::-webkit-input-placeholder {
+        font-weight: 700;
+        color: @gray-light;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        font-weight: 700;
+        color: @gray-light;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+        font-weight: 700;
+        color: @gray-light;
+    }
+    :-ms-input-placeholder {
+        font-weight: 700;
+        color: @gray-light;
+    }
+    .text-danger {
+        color: red;
+    }
+}
 
 // Button Styles
 .btn-default {

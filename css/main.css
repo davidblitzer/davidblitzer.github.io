@@ -510,6 +510,119 @@ header:after {
   top: 0;
   z-index: 2;
 }
+.contact {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.contact .heading {
+  margin-bottom: 50px;
+}
+.contact .heading h2 {
+  font-weight: 900;
+  font-size: 33px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.contact .btn-submit {
+  background: Transparent;
+  border-color: #141e2d;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 17px !important;
+  font-family: 'Open Sans', sans-serif;
+  color: #555555;
+  font-weight: 100;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 17px 35px;
+  -webkit-box-decoration-break: clone;
+  -o-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.contact .btn-submit:hover,
+.contact .btn-submit:focus,
+.contact .btn-submit.focus,
+.contact .btn-submit:active,
+.contact .btn-submit.active,
+.open > .dropdown-toggle.contact .btn-submit {
+  background: 0 0 rgba(0, 0, 0, 0.1);
+}
+.contact .btn-submit:active,
+.contact .btn-submit.active,
+.open > .dropdown-toggle.contact .btn-submit {
+  background-image: none;
+}
+.contact .btn-submit.disabled,
+.contact .btn-submit[disabled],
+fieldset[disabled] .contact .btn-submit,
+.contact .btn-submit.disabled:hover,
+.contact .btn-submit[disabled]:hover,
+fieldset[disabled] .contact .btn-submit:hover,
+.contact .btn-submit.disabled:focus,
+.contact .btn-submit[disabled]:focus,
+fieldset[disabled] .contact .btn-submit:focus,
+.contact .btn-submit.disabled.focus,
+.contact .btn-submit[disabled].focus,
+fieldset[disabled] .contact .btn-submit.focus,
+.contact .btn-submit.disabled:active,
+.contact .btn-submit[disabled]:active,
+fieldset[disabled] .contact .btn-submit:active,
+.contact .btn-submit.disabled.active,
+.contact .btn-submit[disabled].active,
+fieldset[disabled] .contact .btn-submit.active {
+  color: #141e2d;
+  background: 0 0 rgba(0, 0, 0, 0.5);
+  border-color: #141e2d;
+  border-style: solid;
+  border-width: 1px;
+}
+.contact .btn-submit .badge {
+  color: #ffffff;
+  background-color: #141e2d;
+}
+.contact .form-group {
+  padding-right: 50px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 25px;
+}
+.contact .form-group input,
+.contact .form-group textarea {
+  padding: 15px;
+  border: 1px #141e2d solid;
+  border-radius: 0px;
+}
+.contact .form-group input.form-control {
+  height: auto;
+}
+.contact .form-group textarea.form-control {
+  height: 236px;
+  resize: none;
+}
+.contact .form-control:focus {
+  border-color: #7b99c5;
+  box-shadow: none;
+}
+.contact ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #919191;
+}
+.contact :-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 700;
+  color: #919191;
+}
+.contact ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 700;
+  color: #919191;
+}
+.contact :-ms-input-placeholder {
+  font-weight: 700;
+  color: #919191;
+}
+.contact .text-danger {
+  color: red;
+}
 .btn-default {
   color: #222222;
   background-color: white;
