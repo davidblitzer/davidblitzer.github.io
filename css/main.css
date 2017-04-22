@@ -371,8 +371,11 @@ header:after {
   padding-bottom: 30px;
 }
 .filler1 {
+  background: url("../img/images/improve_quote.jpg") center no-repeat;
+  background-size: 100% 400px;
+  position: relative;
   height: 150px;
-  background-color: #243650;
+  width: 100%;
   text-align: center;
   display: flex;
   align-items: center;
