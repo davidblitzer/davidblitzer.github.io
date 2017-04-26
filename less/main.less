@@ -362,10 +362,11 @@ header:after {
     }
 
     p{
-        font-size: 17px;
-        .sans-serif;
         color: @navy;
+        font-size: 14px;
+        .sans-serif;
         text-align:justify;
+        font-weight: 100;
     }
 
     h3{
@@ -395,7 +396,7 @@ header:after {
     background-size: 100% 400px;
     position: relative;
 
-    height: 150px;
+    height: 200px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -849,6 +850,16 @@ img::-moz-selection {
     background: transparent;
 }
 
+div{
+
+}
+
 body {
+
     webkit-tap-highlight-color: @gray-darker;
+    @media (min-width: 768px) {
+         zoom: 0.96;
+        -moz-transform: scale(0.9);
+        -moz-transform-origin: 0 0;
+    }
 }

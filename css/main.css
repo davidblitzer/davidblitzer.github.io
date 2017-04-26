@@ -346,10 +346,11 @@ header:after {
   margin-top: 20px;
 }
 .section-about-me p {
-  font-size: 17px;
-  font-family: 'Open Sans', sans-serif;
   color: #141e2d;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   text-align: justify;
+  font-weight: 100;
 }
 .section-about-me h3 {
   color: #141e2d;
@@ -374,7 +375,7 @@ header:after {
   background: url("../img/images/improve_quote.jpg") center no-repeat;
   background-size: 100% 400px;
   position: relative;
-  height: 150px;
+  height: 200px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -926,4 +927,11 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+@media (min-width: 768px) {
+  body {
+    zoom: 0.96;
+    -moz-transform: scale(0.9);
+    -moz-transform-origin: 0 0;
+  }
 }
