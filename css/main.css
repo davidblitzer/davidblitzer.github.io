@@ -330,16 +330,48 @@ header .services .element img {
   width: 25%;
   padding: 5px;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  header .services {
-    height: 15%;
-    top: 85%;
-  }
-}
-@media (max-width: 768px) {
+@media (min-width: 767px) and (max-width: 991px) {
   header .services {
     height: 10%;
     top: 90%;
+  }
+  header .services .element img {
+    width: 40%;
+  }
+  header .services .element h4 {
+    font-size: 1.6vw;
+  }
+}
+@media (min-width: 450px) and (max-width: 766px) {
+  header .services {
+    height: 20%;
+    top: 80%;
+    padding: 10px;
+  }
+  header .services .element img {
+    width: 35%;
+  }
+  header .services .element h4 {
+    font-size: 1.6vw;
+  }
+  header .header-content {
+    padding: 15px 15px 15px;
+  }
+  header .header-content .header-content-inner img {
+    max-width: 100%;
+    height: 60px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 449px) {
+  header {
+    height: 114%;
+  }
+  header .services {
+    height: 12%;
+    top: 88%;
     padding: 10px;
   }
   header .services .element img {
@@ -483,6 +515,14 @@ header:after {
 .section-services * {
   z-index: 2;
 }
+@media (max-width: 768px) {
+  .section-services .portfolio-item {
+    width: 350px!important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
 .conditions {
   min-height: 600px;
   background-color: #141e2d;
@@ -494,7 +534,7 @@ header:after {
 .conditions .content p {
   color: #ffffff;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 18px;
   font-family: 'Raleway', sans-serif;
 }
 .conditions h2 {
@@ -503,6 +543,16 @@ header:after {
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media (max-width: 770px) {
+  .conditions .content {
+    padding-top: 25px;
+  }
+  .conditions .content p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 15px;
+  }
 }
 .what-we-do {
   padding-top: 30px;

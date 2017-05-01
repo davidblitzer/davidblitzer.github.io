@@ -340,16 +340,53 @@ header {
             }
         }
     }
-    @media (min-width: 768px) and (max-width: 991px){
+    @media (min-width: 767px) and (max-width: 991px){
         .services{
-            height: 15%;
-            top: 85%;
+            height: 10%;
+            top: 90%;
+
+            .element{
+                img{
+                    width: 40%;
+                }
+                h4{
+                    font-size: 1.6vw;
+                }
+            }
         }
     }
-     @media (max-width: 768px){
+     @media (min-width: 450px) and (max-width: 766px){
          .services{
-             height: 10%;
-             top: 90%;
+             height: 20%;
+             top: 80%;
+             padding: 10px;
+             .element{
+                 img{
+                     width: 35%;
+                 }
+                 h4{
+                     font-size: 1.6vw;
+                 }
+             }
+         }
+         .header-content {
+             padding: 15px 15px 15px;
+             .header-content-inner {
+                 img{
+                     max-width: 100%;
+                     height: 60px;
+                 }
+                 p{
+                    font-size: 18px;
+                 }
+             }
+         }
+     }
+    @media (max-width: 449px){
+        height: 114%;
+         .services{
+             height: 12%;
+             top: 88%;
              padding: 10px;
              .element{
                  img{
@@ -372,7 +409,6 @@ header {
                  }
              }
          }
-
      }
 }
 
@@ -506,6 +542,14 @@ header:after {
     * {
         z-index: 2;
     }
+    @media (max-width: 768px){
+        .portfolio-item{
+            width: 350px!important;
+            margin-left: auto;
+	        margin-right: auto;
+	        display: block;
+        }
+    }
 
 }
 
@@ -520,7 +564,7 @@ header:after {
         p{
             color: @white;
             font-size: 18px;
-            line-height: 35px;
+            line-height: 18px;
             .raleway-font;
         }
     }
@@ -533,6 +577,16 @@ header:after {
         color: @white;
     }
 
+    @media (max-width: 770px){
+        .content{
+            padding-top: 25px;
+            p{
+                font-size: 14px;
+                text-align: center;
+                line-height: 15px;
+            }
+        }
+    }
 }
 
 .what-we-do{
