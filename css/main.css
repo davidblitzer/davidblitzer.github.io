@@ -83,6 +83,11 @@ p {
 .navbar-default .navbar-header .navbar-brand:focus {
   color: #436597;
 }
+@media (max-width: 768px) {
+  .navbar-default .navbar-header .navbar-brand {
+    font-size: 22px;
+  }
+}
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 600;
   font-size: 12px;
@@ -191,8 +196,8 @@ header .header-content {
   z-index: 3;
 }
 header .header-content .header-content-inner img {
-  height: 80px;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
@@ -281,26 +286,24 @@ header .header-content .header-content-inner .btn-header .badge {
   color: #ffffff;
   background-color: #141e2d;
 }
-@media (min-width: 768px) {
-  header .header-content {
-    position: absolute;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  header .header-content .header-content-inner {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  header .header-content .header-content-inner img {
-    height: 120px;
-  }
-  header .header-content .header-content-inner h1 {
-    font-size: 50px;
-  }
+header .header-content {
+  position: absolute;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 50px;
+}
+header .header-content .header-content-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .header-content .header-content-inner img {
+  height: 120px;
+}
+header .header-content .header-content-inner h1 {
+  font-size: 50px;
 }
 header .services {
   position: relative;
@@ -326,6 +329,35 @@ header .services .element h4 span {
 header .services .element img {
   width: 25%;
   padding: 5px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  header .services {
+    height: 15%;
+    top: 85%;
+  }
+}
+@media (max-width: 768px) {
+  header .services {
+    height: 10%;
+    top: 90%;
+    padding: 10px;
+  }
+  header .services .element img {
+    width: 55%;
+  }
+  header .services .element h4 {
+    font-size: 1.6vw;
+  }
+  header .header-content {
+    padding: 15px 15px 15px;
+  }
+  header .header-content .header-content-inner img {
+    max-width: 100%;
+    height: 60px;
+  }
+  header .header-content .header-content-inner p {
+    font-size: 18px;
+  }
 }
 header:after {
   background: url('../img/grid.png') center repeat;
@@ -371,6 +403,22 @@ header:after {
   max-width: 100px;
   padding-bottom: 30px;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .section-about-me .container {
+    padding: 0!important;
+  }
+  .section-about-me img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .section-about-me img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 350px;
+  }
+}
 .filler1 {
   background: url("../img/images/improve_quote.jpg") center no-repeat;
   background-size: 100% 400px;
@@ -391,6 +439,11 @@ header:after {
 .filler1 p span {
   color: #c3962e;
   font-weight: 900;
+}
+@media (max-width: 767px) {
+  .filler1 {
+    background-size: cover;
+  }
 }
 .section-services {
   margin-top: 70px;
@@ -924,6 +977,9 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent;
+}
+img {
+  max-width: 100%;
 }
 body {
   webkit-tap-highlight-color: #222222;
