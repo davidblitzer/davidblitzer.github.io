@@ -637,6 +637,9 @@ header:after {
             display: block;
             float: none !important;
         }
+        br{
+            content: ' ';
+        }
     }
 
 }
@@ -738,17 +741,28 @@ header:after {
             float: left;
             margin-left: 27px;
         }
+        @media(max-width: 767px){
+            margin-bottom: 75px;
+
+            border-left: 0;
+        }
     }
 
     .form-group {
         padding-right: 30px;
         .sans-serif;
         margin-bottom: 25px;
+        input{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
         input,
         textarea {
             padding: 15px;
             border: 1px @navy solid;
             border-radius: 0px;
+
         }
         input.form-control {
             height: auto;
@@ -756,6 +770,13 @@ header:after {
         textarea.form-control {
             height: 275px;
             resize: none;
+        }
+        @media (max-width: 767px){
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
     }
 
@@ -914,6 +935,9 @@ header:after {
 
     h4{
         color: @gray-light
+    }
+     @media(max-width: 767px){
+        background-size: cover;
     }
 }
 .footer:after {

@@ -602,6 +602,9 @@ header:after {
     display: block;
     float: none !important;
   }
+  .what-we-do br {
+    content: ' ';
+  }
 }
 .filler2 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/iStock-482737246.jpg') center no-repeat;
@@ -696,10 +699,21 @@ header:after {
   float: left;
   margin-left: 27px;
 }
+@media (max-width: 767px) {
+  .contact .find-us {
+    margin-bottom: 75px;
+    border-left: 0;
+  }
+}
 .contact .form-group {
   padding-right: 30px;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 25px;
+}
+.contact .form-group input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .contact .form-group input,
 .contact .form-group textarea {
@@ -713,6 +727,15 @@ header:after {
 .contact .form-group textarea.form-control {
   height: 275px;
   resize: none;
+}
+@media (max-width: 767px) {
+  .contact .form-group {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
 .contact .btn-submit {
   background: Transparent;
@@ -867,6 +890,11 @@ fieldset[disabled] .contact .btn-submit.active {
 }
 .footer h4 {
   color: #919191;
+}
+@media (max-width: 767px) {
+  .footer {
+    background-size: cover;
+  }
 }
 .footer:after {
   background: url('../img/grid.png') center repeat;
