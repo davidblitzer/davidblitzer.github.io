@@ -743,6 +743,10 @@ header:after {
     display: block;
   }
 }
+.contact #email_alert {
+  color: #141e2d;
+  text-align: center;
+}
 .contact .btn-submit {
   background: Transparent;
   border-color: #141e2d;
