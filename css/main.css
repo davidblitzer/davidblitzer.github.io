@@ -306,11 +306,11 @@ header .header-content .header-content-inner h1 {
   font-size: 50px;
 }
 header .services {
-  position: relative;
   text-align: center;
+  position: relative;
   z-index: 3;
-  top: 80%;
-  height: 20%;
+  top: 83%;
+  height: 17%;
   width: 100%;
   background-color: rgba(20, 30, 45, 0.9);
   padding: 25px;
@@ -331,6 +331,9 @@ header .services .element img {
   padding: 5px;
 }
 @media (min-width: 767px) and (max-width: 991px) {
+  header {
+    height: 125%;
+  }
   header .services {
     height: 10%;
     top: 90%;
@@ -343,9 +346,12 @@ header .services .element img {
   }
 }
 @media (min-width: 450px) and (max-width: 766px) {
+  header {
+    height: 114%;
+  }
   header .services {
-    height: 20%;
-    top: 80%;
+    height: 12%;
+    top: 88%;
     padding: 10px;
   }
   header .services .element img {
@@ -759,7 +765,8 @@ header:after {
 .contact .btn-submit:active,
 .contact .btn-submit.active,
 .open > .dropdown-toggle.contact .btn-submit {
-  background: 0 0 rgba(0, 0, 0, 0.1);
+  background: #1c2a3f;
+  color: white;
 }
 .contact .btn-submit:active,
 .contact .btn-submit.active,
