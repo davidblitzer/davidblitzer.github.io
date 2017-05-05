@@ -871,6 +871,12 @@ fieldset[disabled] .contact .btn-submit.active {
   height: 130px;
   padding: 25px;
 }
+@media (max-width: 500px) {
+  .affiliates img {
+    height: 120px;
+    paddign: 20px;
+  }
+}
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/iStock-475440664.jpg') center no-repeat;
   background-size: 100% 400px;
