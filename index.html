@@ -20,6 +20,9 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300i,600,700|Raleway:400,600,700" rel="stylesheet">
 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
     <!-- Plugin CSS
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     -->
@@ -391,8 +394,11 @@
                     </div>
                     <div class="clearfix"></div>
                     <div id="success"></div>
+                    <div class="text-center">
+                      <div class="g-recaptcha" id="recaptcha" data-sitekey="6LeIEsEUAAAAAIeNvkp-V6JeHUeGdcjQWuLTcVkh" data-callback="recaptchaCallback"></div>
+                    </div>
                     <div class="row text-center">
-                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="submit" class="btn-submit hidden" id="btnSubmit">Submit</button>
                     </div>
                 </form>
                 <br>
@@ -483,7 +489,6 @@
             THORNHILL, ON L3T 3C3 <br>
             647-539-7899<br>
             905-881-1661<br>
-            DAVIDBLITZER@HOTMAIL.COM
         </h5>
 
         <br>
@@ -537,6 +542,27 @@
   ga('create', 'UA-103834631-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script>
+    function recaptchaCallback() {
+        var btnSubmit = document.getElementById("btnSubmit");
+        var reCaptcha = document.getElementById("recaptcha");
+
+        if (btnSubmit.classList.contains("hidden")) {
+          reCaptcha.classList.add("hidden", 1000);
+          btnSubmit.classList.remove("hidden", 1000);
+        }
+    }
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+       ...
+    });
+});
 </script>
 
 </body>

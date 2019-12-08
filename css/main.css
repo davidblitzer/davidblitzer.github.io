@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Steway v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2017 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 html,
@@ -648,6 +648,9 @@ header:after {
   right: 0;
   top: 0;
   z-index: 2;
+}
+.g-recaptcha {
+  display: inline-block;
 }
 .contact {
   margin-top: 70px;
